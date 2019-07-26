@@ -4,7 +4,7 @@
 .body{
   margin-left: 20px;
   margin-top: 20px;
-  max-width: 450px;
+  
 }
 main{
   width: 95%;
@@ -26,19 +26,36 @@ main{
   width: 95%;
   padding: 10px;
   outline: 2px solid lightgray;
+  display: inline-block;
+  max-height: 100px;
+  
+}
+.portlink {
+  position: relative;
+  text-align: center;
+  bottom: 20px;
+  visibility: hidden;
+}
+.contactlink {
+  position: relative;
+  text-align: right;
+  margin-right: 50px;
+  bottom: 68px;
+  visibility: hidden;
 }
 
 .headline{
   position: relative;
-  top: 20px;
+  top: 30px;
   font-size: 1.7rem;
 }
 
 .title{
-    width: 95%;
+  width: 95%;
   padding: 10px;
   outline: 2px solid lightgray;
   height: 35px;
+  
 }
 .projectlabel{
   position: relative;
@@ -60,4 +77,26 @@ p {
   position: relative;
   bottom: 30px;
 
+}
+@media screen and (min-width: 680px) {
+  .portfolio{
+    visibility: hidden;
+  }
+  .contact{
+    visibility: hidden;
+  }
+  main {
+    height: 300px;
+  }
+  .portlink {
+    visibility: visible;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .contactlink {
+    visibility: visible;
+  }
+  
 }
